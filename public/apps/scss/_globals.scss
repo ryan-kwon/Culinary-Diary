@@ -1,9 +1,17 @@
-* {
+// * {
 
-}
-html{
+// }
+// html{
 
-}
+// }
 body{
-    
+    scroll-behavior: smooth;
+    line-height: 1.3;
+    font-family: 'Georgia';
+    color:#E1D8C8;
+    background-color: #45403A;
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    //vertical-align: middle;
 }

@@ -27,15 +27,20 @@ img, svg, video, canvas, audio, iframe, embed, object {
   text-align: center;
 }
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 2s;
+.index_body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.fade-in.active {
-  opacity: 1;
+@keyframes fadeinAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 #landing_page_flower1 {
   position: absolute;
   left: -6px;

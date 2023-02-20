@@ -38,6 +38,16 @@
 	bottom: 0;
 	right: 0;
 }
+.bg_img{
+	z-index: -1;
+}
+.bg_wood_detail{
+    position: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: -100;
+}
 // #landing_page_mflower{
 
 // }

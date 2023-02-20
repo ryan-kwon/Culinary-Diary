@@ -1,0 +1,5 @@
+- configure sql tables
+    - insert data
+        - images are "blob" data type?????
+- fade-in animation
+- 

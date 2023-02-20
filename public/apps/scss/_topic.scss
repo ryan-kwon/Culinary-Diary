@@ -1,0 +1,31 @@
+.topic_main{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+// .topic_buttons_group{
+
+// }
+.topic_button{
+	margin-top: 20px;
+
+	width:260px;
+	height: 50px;
+	background: #7C7A61;
+	border: 3px solid #6B645C;
+	border-radius: 20px;
+
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #6B645C;
+
+	&:hover{
+		border-color: #E1D8C8;
+		color: #E1D8C8;
+	}
+}

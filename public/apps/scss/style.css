@@ -51,4 +51,98 @@ img, svg, video, canvas, audio, iframe, embed, object {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.bg_img {
+  z-index: -1;
+}
+
+.bg_wood_detail {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -100;
+}
+
+.topic_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topic_button {
+  margin-top: 20px;
+  width: 260px;
+  height: 50px;
+  background: #7C7A61;
+  border: 3px solid #6B645C;
+  border-radius: 20px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #6B645C;
+}
+.topic_button:hover {
+  border-color: #E1D8C8;
+  color: #E1D8C8;
+}
+
+.carousel-container {
+  width: 80%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.carousel {
+  display: inline-block;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  left: 95px;
+  top: 322px;
+  background: #7C7A61;
+  border: 3px solid #E1D8C8;
+  border-radius: 20px;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+.item img {
+  width: 140px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=style.css.map */

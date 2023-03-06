@@ -11,6 +11,7 @@
     flex-direction: column;
 
 	h1{
+		font-size: 70px;
 		text-align: center;
 	}
 }
@@ -27,17 +28,34 @@
 		opacity: 1;
 	}
 }
-
+#landing_page_flower{
+	width: 470px;
+	height: 500px;
+	cursor:pointer;
+}
 #landing_page_flower1{
 	position: absolute;
-	left: -6px;
-	top: -5px;
+	left: 0px;
+	top: 0px;
 }
 #landing_page_flower2{
 	position: absolute;
+	top: 0;
+	right: 0;
+	transform: scale(-1, -1);
+}
+#landing_page_flower3{
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+}
+#landing_page_flower4{
+	position: absolute;
 	bottom: 0;
 	right: 0;
+	transform: scale(-1, -1);
 }
+
 .bg_img{
 	z-index: -1;
 }

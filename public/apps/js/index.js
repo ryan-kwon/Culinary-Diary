@@ -8,27 +8,29 @@ function loadNoodlePage(){
 	window.location="/public/noodles.html"
 }
 
-const carousel = document.querySelector('.carousel');
-const dots = document.querySelector('.carousel-dots');
+var audio = new Audio('/audio/Cariño The Marías  lyrics [sub esp].mp3');
+audio.loop = true;
 
-for (let i = 0; i < carousel.children.length; i++) {
-	const dot = document.createElement('span');
-	dot.classList.add('dot');
-	dots.appendChild(dot);
-
-	dot.addEventListener('click', () => {
-		carousel.scrollLeft = i * carousel.children[0].offsetWidth;
-		setActiveDot(i);
-	});
-}
-
-function setActiveDot(index) {
-	const activeDot = document.querySelector('.dot.active');
-	if (activeDot) activeDot.classList.remove('active');
-	dots.children[index].classList.add('active');
-}
-
-carousel.addEventListener('scroll', () => {
-	const index = Math.round(carousel.scrollLeft / carousel.children[0].offsetWidth);
-	setActiveDot(index);
+// Play the audio when the page is loaded
+document.addEventListener("DOMContentLoaded", function(event) {
+	audio.volume = 0.1;
+	audio.play();
 });
+
+// $(document).ready(function() {
+// 	// Load the initial content
+// 	$('#content').load('home.html');
+
+// 	// Handle clicks on links
+// 	$('a').click(function(event) {
+// 		event.preventDefault(); // Prevent the link from being followed
+// 		var href = $(this).attr('href'); // Get the URL of the new content
+// 		$('#content').fadeOut(500, function() {
+// 			// Load the new content into the div
+// 			$('#content').load(href, function() {
+// 				// Fade in the new content
+// 				$('#content').fadeIn(500);
+// 			});
+// 		});
+// 	});
+// });

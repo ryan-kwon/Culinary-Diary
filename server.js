@@ -7,10 +7,10 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const connection = mysql.createConnection({
-	host: 'sql301.epizy.com',
-	user: 'epiz_33612692',
-	password: 'Po8ZqBoEqst',
-	database: 'epiz_33612692_kskculinaryarchive'
+	host: 'host',
+	user: 'user',
+	password: 'password',
+	database: 'database'
 });
 
 connection.connect((err) => {

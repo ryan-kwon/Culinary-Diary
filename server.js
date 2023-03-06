@@ -7,10 +7,14 @@ const hostname = '127.0.0.1';
 const port = 3000;
 
 const connection = mysql.createConnection({
-	host: 'host',
-	user: 'user',
-	password: 'password',
-	database: 'database'
+	// host: 'host',
+	// user: 'user',
+	// password: 'password',
+	// database: 'database'
+	host: process.env.DB_HOST,
+	user: process.env.DB_USER,
+	password: process.env.DB_PASS,
+	database: process.env.DB_NAME
 });
 
 connection.connect((err) => {

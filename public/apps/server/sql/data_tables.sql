@@ -42,6 +42,28 @@ DESCRIBE equipment;
 DESCRIBE ingredient;
 DESCRIBE directions;
 
+INSERT INTO topic(name) VALUES ('Safety');
+INSERT INTO topic(name) VALUES ('Resources');
+INSERT INTO topic(name) VALUES ('Noodles');
+INSERT INTO topic(name) VALUES ('Soups/Stews');
+INSERT INTO topic(name) VALUES ('MEAT MEAT MEAT');
+INSERT INTO topic(name) VALUES ('Stir Fry');
+INSERT INTO topic(name) VALUES ('Deep Fried Goodness');
+INSERT INTO topic(name) VALUES ('Sandwiches/Burgers');
+INSERT INTO topic(name) VALUES ('Sauces/Marinades');
+INSERT INTO topic(name) VALUES ('Desserts');
+INSERT INTO topic(name) VALUES ('Drinks');
+
+INSERT INTO recipe(recipe_id, name, image, prep, cook, ready)
+VALUES(
+	(SELECT id FROM topic WHERE name = 'Noodles'),
+	'Aglio E Olio',
+	,
+	00:01:00,
+	00:20:00,
+	00:01:00
+);
+
 /*
 INSERT INTO topic(name) VALUES ('Recipes');
 INSERT INTO topic(name) VALUES ('Equipment');

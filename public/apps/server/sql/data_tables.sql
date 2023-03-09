@@ -1,4 +1,8 @@
 DROP TABLE IF EXISTS `topic`;
+DROP TABLE IF EXISTS `recipe`;
+DROP TABLE IF EXISTS `equipment`;
+DROP TABLE IF EXISTS `ingredient`;
+DROP TABLE IF EXISTS `directions`;
 
 CREATE TABLE `topic` (
 	`id` int(11) NOT NULL AUTO_INCREMENT,
@@ -6,23 +10,39 @@ CREATE TABLE `topic` (
 	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
-CREATE TABLE `subtopic` (
-	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`name` varchar(255),
-	`subtopic_id` int(11)
-) ENGINE=InnoDB;
-
 CREATE TABLE `recipe`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
 	'recipe_id' int(11),
+	`name` varchar(255),
 	'image' blob,
-	'text' text
+	'prep' TIME,
+	'cook' TIME,
+	'ready' TIME,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `equipment`(
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL
+) ENGINE=InnoDB;
+
+CREATE TABLE `ingredient`(
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` varchar(255) NOT NULL
+) ENGINE=InnoDB;
+
+CREATE TABLE `directions`(
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`sentence` text NOT NULL
 ) ENGINE=InnoDB;
 
 DESCRIBE topic;
-DESCRIBE subtopic;
 DESCRIBE recipe;
+DESCRIBE equipment;
+DESCRIBE ingredient;
+DESCRIBE directions;
 
+/*
 INSERT INTO topic(name) VALUES ('Recipes');
 INSERT INTO topic(name) VALUES ('Equipment');
 INSERT INTO topic(name) VALUES ('Safety');
@@ -48,6 +68,7 @@ VALUES(
 	'Desserts',
 	(SELECT id FROM topic WHERE name = 'Recipes')
 );
+*/
 
 
 /*

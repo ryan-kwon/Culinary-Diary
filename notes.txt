@@ -1,5 +1,9 @@
 - configure sql tables
-    - insert data
-        - images are "blob" data type?????
-- fade-in animation
-- carousel: https://css-tricks.com/css-only-carousel/
+    - create more tables
+    - add data to tables
+- server connection
+    - fix the throw error: 
+    /mnt/d/Code/Culinary-Diary/server.js:58
+        if (err) throw err;
+
+    - display the values in the "topic" datatable to the topics.html file

@@ -8,14 +8,15 @@ function loadNoodlePage(){
 	window.location="/public/noodles.html"
 }
 
-var audio = new Audio('/audio/Cariño The Marías  lyrics [sub esp].mp3');
-audio.loop = true;
+//this shit dont work wtf
+// var audio = new Audio('/audio/Cariño The Marías  lyrics [sub esp].mp3');
+// audio.loop = true;
 
-// Play the audio when the page is loaded
-document.addEventListener("DOMContentLoaded", function(event) {
-	audio.volume = 0.1;
-	audio.play();
-});
+// // Play the audio when the page is loaded
+// document.addEventListener("DOMContentLoaded", function(event) {
+// 	audio.volume = 0.1;
+// 	audio.play();
+// });
 
 // $(document).ready(function() {
 // 	// Load the initial content

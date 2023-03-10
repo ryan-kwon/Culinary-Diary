@@ -24,13 +24,30 @@ connection.connect((err) => {
 	}
 	console.log('Connected to database with id ' + connection.threadId);
 });
-  
+
+const query = 'SELECT * FROM topic';
+connection.query(query, (error, results, fields) => {
+	if (err) throw err;
+
+	const data = [];
+	for(let i = 0; i < results.length; i++){
+		data.push(results[i]);
+	}
+
+	const topicNames = document.querySelectorAll('#topic_name');
+	topicNames.forEach((topicName, index) => {
+		topicName.innerHTML = data[index].name;
+	});
+})
+
 connection.query('SELECT * FROM topic', (error, results, fields) => {
 	if (error) {
 		console.error('Error executing query: ' + error.stack);
 		return;
 	}
 	console.log('Query results:', results);
+
+
 });
 
 const server = http.createServer((req, res) => {

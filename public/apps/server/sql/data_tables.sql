@@ -12,28 +12,43 @@ CREATE TABLE `topic` (
 
 CREATE TABLE `recipe`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
-	'recipe_id' int(11),
-	`name` varchar(255),
-	'image' blob,
-	'prep' TIME,
-	'cook' TIME,
-	'ready' TIME,
-	PRIMARY KEY (`id`)
+	`recipe_id` int(11),
+	`name` varchar(255) NOT NULL,
+	`image` blob,
+	`prep` TIME,
+	`cook` TIME,
+	`ready` TIME,
+	PRIMARY KEY (`id`),
+	FOREIGN KEY (`recipe_id`) REFERENCES topic(`id`)
 ) ENGINE=InnoDB;
+
+/*
+CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`date` DATE NOT NULL,
+	`text` varchar(255) NOT NULL,
+	`user_id` int(11),
+	PRIMARY KEY (`id`),
+	FOREIGN KEY (`user_id`) REFERENCES user(`id`)
+) ENGINE=InnoDB;
+*/
 
 CREATE TABLE `equipment`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`name` varchar(255) NOT NULL
+	`name` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
 CREATE TABLE `ingredient`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`name` varchar(255) NOT NULL
+	`name` varchar(255) NOT NULL,
+	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
 CREATE TABLE `directions`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
-	`sentence` text NOT NULL
+	`sentence` text NOT NULL,
+	PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
 DESCRIBE topic;

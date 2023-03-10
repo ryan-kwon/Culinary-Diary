@@ -18,8 +18,19 @@ const connection = mysql.createConnection({
 });
 
 connection.connect((err) => {
-	if (err) throw err;
-	console.log('Connected to MySQL database.');
+	if (err) {
+		console.error('Error connecting to database: ' + err.stack);
+		return;
+	}
+	console.log('Connected to database with id ' + connection.threadId);
+});
+  
+connection.query('SELECT * FROM topic', (error, results, fields) => {
+	if (error) {
+		console.error('Error executing query: ' + error.stack);
+		return;
+	}
+	console.log('Query results:', results);
 });
 
 const server = http.createServer((req, res) => {

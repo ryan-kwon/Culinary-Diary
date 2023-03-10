@@ -1,7 +1,7 @@
 body {
   scroll-behavior: smooth;
   line-height: 1.3;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   color: #E1D8C8;
   background-color: #242529;
 }
@@ -11,55 +11,27 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 
 .index_header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 .index_header_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .index_header_logo h1 {
   font-size: 70px;
   text-align: center;
 }
 
 .index_body {
-  -webkit-animation: fadeInAnimation ease 3s;
-          animation: fadeInAnimation ease 3s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadeinAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeinAnimation {
@@ -70,7 +42,6 @@ img, svg, video, canvas, audio, iframe, embed, object {
     opacity: 1;
   }
 }
-
 #landing_page_flower {
   width: 470px;
   height: 500px;
@@ -78,31 +49,29 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 
 #landing_page_flower1 {
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
 }
 
 #landing_page_flower2 {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 #landing_page_flower3 {
-  position: absolute;
+  position: fixed;
   left: 0px;
   bottom: 0;
 }
 
 #landing_page_flower4 {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 .bg_img {
@@ -118,33 +87,18 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 
 .topic_main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .topic_buttons_group .page_change {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .topic_buttons_group .page_change a {
   color: #E1D8C8;
   text-decoration: none;
@@ -157,24 +111,16 @@ img, svg, video, canvas, audio, iframe, embed, object {
   border-radius: 20px;
   width: 480px;
   height: 400px;
-  font-family: 'Georgia';
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   color: #6B645C;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .topic_button h1 {
   color: #E1D8C8;
   font-weight: 700;
@@ -186,17 +132,10 @@ img, svg, video, canvas, audio, iframe, embed, object {
   height: 50px;
   background: #3F3D3E;
   border-radius: 94px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .view_btn:hover {
   border-color: #E1D8C8;
   color: #E1D8C8;
@@ -205,10 +144,8 @@ img, svg, video, canvas, audio, iframe, embed, object {
 
 .grid_container {
   margin-top: 20px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
 
@@ -216,7 +153,6 @@ img, svg, video, canvas, audio, iframe, embed, object {
   width: 990px;
   height: 250px;
 }
-
 #topic_btn1 h1 {
   color: #E1D8C8;
   font-weight: 700;
@@ -231,62 +167,35 @@ img, svg, video, canvas, audio, iframe, embed, object {
   min-width: 1152px;
   min-height: 1638px;
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
-
 .recipe_div .recipe_title {
   width: 80%;
   height: 160px;
   border: 5px solid #988176;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .recipe_div .recipe_title h1 {
   text-align: center;
   font-weight: 700;
   font-size: 96px;
 }
-
 .recipe_div .recipe_img {
   border: 5px solid #988176;
   width: 80%;
   height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .recipe_div .recipe_img img {
   height: 100%;
 }
-
 .recipe_div .recipe_img .recipe_info {
   width: 500px;
   height: 100px;
@@ -294,26 +203,16 @@ img, svg, video, canvas, audio, iframe, embed, object {
   top: -150px;
   background: #3F3D3E;
   border: 2px solid #988176;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .recipe_div .recipe_img .recipe_info h3 {
   text-align: center;
 }
-
 .recipe_div .recipe_img .recipe_info p {
   text-align: center;
 }
-
 .recipe_div .recipe_img .recipe_info hr {
   width: 80%;
   height: 2px;
@@ -322,13 +221,8 @@ img, svg, video, canvas, audio, iframe, embed, object {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .recipe_div .recipe_directions {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-/*# sourceMappingURL=style.css.map */
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */

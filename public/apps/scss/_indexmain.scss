@@ -34,23 +34,23 @@
 	cursor:pointer;
 }
 #landing_page_flower1{
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	top: 0px;
 }
 #landing_page_flower2{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	transform: scale(-1, -1);
 }
 #landing_page_flower3{
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	bottom: 0;
 }
 #landing_page_flower4{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	right: 0;
 	transform: scale(-1, -1);

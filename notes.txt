@@ -1,6 +1,10 @@
 how to switch to a branch: git checkout [branch name]
 - main
 - codetesting
+		Make sure you are on the main branch by typing git checkout main and pressing Enter.
+		Type git fetch to download all the changes from the remote repository.
+		Type git checkout <branch-name> to switch to the branch you want to pull.
+		Type git pull origin <branch-name> to pull the latest changes from the 
 
 git add --all
 git commit -m "[message]"
@@ -9,21 +13,14 @@ git pull
 
 node server.js
 
-- configure sql tables
-	- create more tables
-	- add data to tables
-- server connection
-	- fix the throw error: 
+- configure sql tables: IN PROGRESS
+	- create more tables: IN PROGRESS
+	- add data to tables: IN PROGRESS
+- server connection: HAVENT STARTED
+	- fix the throw error: HAVENT STARTED
 	/mnt/d/Code/Culinary-Diary/server.js:58
 		if (err) throw err;
 
-	- display the values in the "topic" datatable to the topics.html file
+	- display the values in the "topic" datatable to the topics.html file: HAVENT STARTED
 
-- secure https connection
-If you don’t have a .htaccess file yet, you can create a file using the File Manager with the file name .htaccess. Using the File Manager is recommended, some systems (especially Windows) don’t work well with .htaccess files.
-After you’ve found or created your .htaccess file, you can edit it in the File Manager or using any text editor (like Notepad). You need to add the following lines to the file:
-RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:CF-Visitor} !{"scheme":"https"}
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+- secure https connection: DONE

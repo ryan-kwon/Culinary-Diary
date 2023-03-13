@@ -17,38 +17,36 @@ const connection = mysql.createConnection({
 	database: process.env.DB_NAME
 });
 
-connection.connect((err) => {
-	if (err) {
-		console.error('Error connecting to database: ' + err.stack);
-		return;
-	}
-	console.log('Connected to database with id ' + connection.threadId);
-});
+// connection.connect((err) => {
+// 	if (err) {
+// 		console.error('Error connecting to database: ' + err.stack);
+// 		return;
+// 	}
+// 	console.log('Connected to database with id ' + connection.threadId);
+// });
 
-const query = 'SELECT * FROM topic';
-connection.query(query, (error, results, fields) => {
-	if (err) throw err;
+// const query = 'SELECT * FROM topic';
+// connection.query(query, (error, results, fields) => {
+// 	if (err) throw err;
 
-	const data = [];
-	for(let i = 0; i < results.length; i++){
-		data.push(results[i]);
-	}
+// 	const data = [];
+// 	for(let i = 0; i < results.length; i++){
+// 		data.push(results[i]);
+// 	}
 
-	const topicNames = document.querySelectorAll('#topic_name');
-	topicNames.forEach((topicName, index) => {
-		topicName.innerHTML = data[index].name;
-	});
-})
+// 	const topicNames = document.querySelectorAll('#topic_name');
+// 	topicNames.forEach((topicName, index) => {
+// 		topicName.innerHTML = data[index].name;
+// 	});
+// })
 
-connection.query('SELECT * FROM topic', (error, results, fields) => {
-	if (error) {
-		console.error('Error executing query: ' + error.stack);
-		return;
-	}
-	console.log('Query results:', results);
-
-
-});
+// connection.query('SELECT * FROM topic', (error, results, fields) => {
+// 	if (error) {
+// 		console.error('Error executing query: ' + error.stack);
+// 		return;
+// 	}
+// 	console.log('Query results:', results);
+// });
 
 const server = http.createServer((req, res) => {
 	console.log(`Request for ${req.url} method ${req.method}`);

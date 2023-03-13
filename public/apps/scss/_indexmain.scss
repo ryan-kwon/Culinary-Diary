@@ -13,6 +13,11 @@
 	h1{
 		font-size: 70px;
 		text-align: center;
+
+		@media screen and (max-width: 390px){
+			font-size: 45px;
+			margin:0;
+		}
 	}
 }
 .index_body{
@@ -29,31 +34,82 @@
 	}
 }
 #landing_page_flower{
+	// background-image: url(/images/webp/main_flower.webp);
+	background-image: url(/images/main_flower.png);
+	background-repeat: no-repeat;
 	width: 470px;
 	height: 500px;
 	cursor:pointer;
+
+	@media screen and (max-width: 390px){
+		background-image: url(/images/webp/main_flower_mobile.webp);
+		width: 300px;
+		height: auto;
+	}
 }
 #landing_page_flower1{
+	background-image: url(/images/webp/flower1.webp);
+	width: 430px;
+	// width: initial;
+	height: 330px;
+
+	border: 0; //css is brain dead stupid
+	background-repeat: no-repeat; //wtf
+
 	position: fixed;
 	left: 0px;
 	top: 0px;
+
+	@media screen and (max-width: 390px){
+		background-image: url(/images/webp/flower1_mobile.webp);
+		width: 225px;
+	}
 }
 #landing_page_flower2{
+	background-image: url(/images/webp/flower2.webp);
+	width: 350px;
+	
+	background-repeat: no-repeat;
+
 	position: fixed;
 	top: 0;
 	right: 0;
 	transform: scale(-1, -1);
+
+	@media screen and (max-width: 390px){
+		background-image: none;
+	}
 }
 #landing_page_flower3{
+	background-image: url(/images/webp/flower2.webp);
+	width: 350px;
+
+	background-repeat: no-repeat;
+
 	position: fixed;
 	left: 0px;
 	bottom: 0;
+
+	@media screen and (max-width: 390px){
+		background-image: none;
+	}
 }
 #landing_page_flower4{
+	background-image: url(/images/webp/flower1.webp);
+	width: 430px;
+
+	background-repeat: no-repeat;
+
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	transform: scale(-1, -1);
+
+	@media screen and (max-width: 390px){
+		background-image: url(/images/webp/flower2_mobile.webp);
+		width: 200px;
+		transform: scale(1, 1);
+	}
 }
 
 .bg_img{

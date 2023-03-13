@@ -24,3 +24,8 @@ node server.js
 	- display the values in the "topic" datatable to the topics.html file: HAVENT STARTED
 
 - secure https connection: DONE
+- improve img loading
+Compress images: By compressing images, you can reduce the file size, which leads to faster loading times. There are online tools like TinyPNG that can help you compress images without losing quality.
+Use responsive images: Responsive images allow you to serve different images based on the screen size of the device. This means that smaller images can be served for smaller screens, which leads to faster loading times.
+Use a content delivery network (CDN): A CDN caches your website's content and serves it from a server closest to the user, which reduces the distance the data has to travel and leads to faster loading times.
+Use WebP format: WebP is a newer image format that offers smaller file sizes than JPEG and PNG, while maintaining quality. You can convert your existing images to WebP format and serve them on your website to improve loading times.

@@ -1,0 +1,190 @@
+@font-face {
+	font-family: 'Seven Swordsmen BB';
+	src: url('/public/fonts/seven-swordsmen-bb/SEVESBRG.TTF') format('truetype');
+}
+
+.rest_main{
+	min-width: 1440px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	.rest_info{
+		&_bg{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			width: 70%;
+			height: 2585px;
+	
+			background: #242529;
+			margin-top: 200px;
+			border: 5px solid #988176;
+			padding: 60px;
+		}
+		&_title{
+			display: flex;
+			align-items: center;
+			// justify-content: space-around;
+	
+			&_img{
+				width: 160px;
+				height: 176.9px;
+			}
+			&_h1{
+				font-family:'Seven Swordsmen BB';
+	
+				font-weight: 400;
+				font-size: 100px;
+			}
+		}
+		&_info{
+			p{
+				margin: 0;
+				font-weight: 700;
+			}
+			&_name{
+				&_title{
+					font-family: 'Georgia';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 64px;
+				}
+				&_contact{
+					margin-left: 5px !important;
+					font-size: 36px;
+					&:hover{
+						cursor: pointer;
+					}
+				}
+			}
+			&_hours{
+				&_title{
+					font-size: 36px;
+				}
+				&_ul{
+					list-style-type: none;
+					padding: 0;
+
+					&_li{
+						font-weight: 400;
+						font-size: 24px;
+						min-width: 190px;
+					}
+				}
+			}
+			&_menu{
+				&_title{
+					font-size: 36px;
+				}
+				&_ul{
+					display: block;
+					list-style-type: none;
+					padding: 0;
+					margin-right:10px;
+
+					&_li{
+						height: 80px;
+						font-weight: 400;
+						font-size: 30px;
+						min-width: 150px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+			&_side{
+				margin-left: 36px;
+				width: 300px;
+
+				&_marg{
+					margin-bottom: 20px;
+				}
+				&_location{
+					width: 130px;
+					font-weight: 400 !important;
+					font-size: 24px;
+				}
+				&_st{
+					font-weight: 400 !important;
+					font-size: 20px;
+					margin-left: 10px !important;
+				}
+				&_btn{
+					color: #E1D8C8;
+					text-align: center;
+					font-weight: 700;
+					font-size: 30px;
+
+					background: #3F3D3E;
+					border-radius: 94px;
+					border: 0px;
+					width: 300px;
+					height: 60px;
+
+					a{
+						text-decoration: none;
+						color: #E1D8C8;
+
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+				&_des{
+					font-weight: 400 !important;
+					font-size: 20px;
+				}
+			}
+		}
+		&_gallery{
+			&_title{
+				font-weight: 700;
+				font-size: 64px;
+				text-align: center;
+			}
+			&_container{
+				display: grid;
+				grid-template-rows: repeat(3, auto);
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 20px;
+
+				.gallery_img1{
+					grid-row: 1;
+					grid-column: 1 / span 2;
+				}
+				.gallery_img2{
+					grid-row: 1;
+					grid-column: 3;
+				}
+				.gallery_img3{
+					grid-row: 2;
+					grid-column: 1 / span 3;
+				}
+				.gallery_img4{
+					grid-row: 2;
+					grid-column: 2;
+				}
+				.gallery_img5{
+					grid-row: 2;
+					grid-column: 3;
+				}
+				.gallery_img6{
+					grid-row: 3;
+					grid-column: 1 / span 3;
+				}
+				.gallery_img7{
+					grid-row: 3;
+					grid-column: 2 / span 2;
+				}
+				.gallery_img8{
+					grid-row: 1 / span 2;
+					grid-column: 1;
+				}
+			}
+			&_img{
+				border: 5px solid #988176;
+			}
+		}
+	}
+}

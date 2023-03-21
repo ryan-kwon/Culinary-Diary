@@ -2,11 +2,27 @@ function loadTopicPage(){
 	window.location="/public/topics.html";
 }
 function loadRecipePage(){
-	window.location="/public/recipe.html"
+	window.location="/public/recipe.html";
 }
 function loadNoodlePage(){
-	window.location="/public/noodles.html"
+	window.location="/public/noodles.html";
 }
+function loadRestaurantPage(){
+	window.location="/public/restaurant.html";
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+	document.getElementById("text-to-copy").addEventListener("click", function() {
+		var text = document.getElementById("text-to-copy").innerText;
+		var dummy = document.createElement("textarea");
+		document.body.appendChild(dummy);
+		dummy.value = text;
+		dummy.select();
+		document.execCommand("copy");
+		document.body.removeChild(dummy);
+	});
+});
+
 
 //this shit dont work wtf
 // var audio = new Audio('/audio/Cariño The Marías  lyrics [sub esp].mp3');

@@ -24,6 +24,7 @@ node server.js
 	- display the values in the "topic" datatable to the topics.html file: HAVENT STARTED
 
 - secure https connection: DONE
+- fix grid formation of restaurant page
 - improve img loading
 Compress images: By compressing images, you can reduce the file size, which leads to faster loading times. There are online tools like TinyPNG that can help you compress images without losing quality.
 Use responsive images: Responsive images allow you to serve different images based on the screen size of the device. This means that smaller images can be served for smaller screens, which leads to faster loading times.

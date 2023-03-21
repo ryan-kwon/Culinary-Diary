@@ -379,4 +379,169 @@ img, svg, video, canvas, audio, iframe, embed, object {
   .recipe_div .recipe_directions ol li {
     font-size: 12px;
   }
+}
+
+@font-face {
+  font-family: "Seven Swordsmen BB";
+  src: url("/public/fonts/seven-swordsmen-bb/SEVESBRG.TTF") format("truetype");
+}
+.rest_main {
+  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rest_main .rest_info_bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 2585px;
+  background: #242529;
+  margin-top: 200px;
+  border: 5px solid #988176;
+  padding: 60px;
+}
+.rest_main .rest_info_title {
+  display: flex;
+  align-items: center;
+}
+.rest_main .rest_info_title_img {
+  width: 160px;
+  height: 176.9px;
+}
+.rest_main .rest_info_title_h1 {
+  font-family: "Seven Swordsmen BB";
+  font-weight: 400;
+  font-size: 100px;
+}
+.rest_main .rest_info_info p {
+  margin: 0;
+  font-weight: 700;
+}
+.rest_main .rest_info_info_name_title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+.rest_main .rest_info_info_name_contact {
+  margin-left: 5px !important;
+  font-size: 36px;
+}
+.rest_main .rest_info_info_name_contact:hover {
+  cursor: pointer;
+}
+.rest_main .rest_info_info_hours_title {
+  font-size: 36px;
+}
+.rest_main .rest_info_info_hours_ul {
+  list-style-type: none;
+  padding: 0;
+}
+.rest_main .rest_info_info_hours_ul_li {
+  font-weight: 400;
+  font-size: 24px;
+  min-width: 190px;
+}
+.rest_main .rest_info_info_menu_title {
+  font-size: 36px;
+}
+.rest_main .rest_info_info_menu_ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 10px;
+}
+.rest_main .rest_info_info_menu_ul_li {
+  height: 80px;
+  font-weight: 400;
+  font-size: 30px;
+  min-width: 150px;
+  margin-bottom: 10px;
+}
+.rest_main .rest_info_info_side {
+  margin-left: 36px;
+  width: 300px;
+}
+.rest_main .rest_info_info_side_marg {
+  margin-bottom: 20px;
+}
+.rest_main .rest_info_info_side_location {
+  width: 130px;
+  font-weight: 400 !important;
+  font-size: 24px;
+}
+.rest_main .rest_info_info_side_st {
+  font-weight: 400 !important;
+  font-size: 20px;
+  margin-left: 10px !important;
+}
+.rest_main .rest_info_info_side_btn {
+  color: #E1D8C8;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  background: #3F3D3E;
+  border-radius: 94px;
+  border: 0px;
+  width: 300px;
+  height: 60px;
+}
+.rest_main .rest_info_info_side_btn a {
+  text-decoration: none;
+  color: #E1D8C8;
+}
+.rest_main .rest_info_info_side_btn a:hover {
+  text-decoration: underline;
+}
+.rest_main .rest_info_info_side_des {
+  font-weight: 400 !important;
+  font-size: 20px;
+}
+.rest_main .rest_info_gallery_title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+.rest_main .rest_info_gallery_container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.rest_main .rest_info_gallery_container .gallery_img1 {
+  grid-row: 1;
+  grid-column: 1/span 2;
+}
+.rest_main .rest_info_gallery_container .gallery_img2 {
+  grid-row: 1;
+  grid-column: 3;
+}
+.rest_main .rest_info_gallery_container .gallery_img3 {
+  grid-row: 2;
+  grid-column: 1/span 3;
+}
+.rest_main .rest_info_gallery_container .gallery_img4 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.rest_main .rest_info_gallery_container .gallery_img5 {
+  grid-row: 2;
+  grid-column: 3;
+}
+.rest_main .rest_info_gallery_container .gallery_img6 {
+  grid-row: 3;
+  grid-column: 1/span 3;
+}
+.rest_main .rest_info_gallery_container .gallery_img7 {
+  grid-row: 3;
+  grid-column: 2/span 2;
+}
+.rest_main .rest_info_gallery_container .gallery_img8 {
+  grid-row: 1/span 2;
+  grid-column: 1;
+}
+.rest_main .rest_info_gallery_img {
+  border: 5px solid #988176;
 }/*# sourceMappingURL=style.css.map */
